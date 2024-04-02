@@ -23,25 +23,11 @@
 }
 
 .introducao-conteudo h1 {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.125;
   margin-bottom: 24px;
 }
 
 .introducao-conteudo p {
-  font-size: 1.5rem;
-  line-height: 1.5;
   margin-bottom: 20px;
-}
-
-@media (max-width: 1200px) {
-  .introducao-conteudo h1 {
-    font-size: 3rem;
-  }
-  .introducao-conteudo p {
-    font-size: 1.25rem;
-  }
 }
 
 @media (max-width: 800px) {
@@ -62,14 +48,6 @@
     padding-bottom: 0px;
   }
   .introducao-conteudo h1 {
-    font-size: 2rem;
     margin-bottom: 16px;
-  }
-  .introducao-conteudo p {
-    font-size: 1.125rem;
-  }
-  .introducao-conteudo a {
-    padding: 12px 16px;
-    font-size: 1rem;
   }
 }
