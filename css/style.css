@@ -1,5 +1,6 @@
 @import './global/global.css';
 @import './global/header.css';
+@import './global/footer.css';
 
 /* Utilidades */
 @import './utilidades/cores.css';
@@ -8,9 +9,8 @@
 
 /* Home */
 @import './home/introducao.css';
-
-/* Bicicletas lista */
-@import './consoles/consoles-lista.css';
-
-/* Tecnologia */
 @import './home/tecnologia.css';
+@import './home/parceiros.css';
+
+/* Consoles */
+@import './consoles/consoles-lista.css';
