@@ -14,3 +14,6 @@
 
 /* Consoles */
 @import './consoles/consoles-lista.css';
+
+/* Termos */
+@import './termos/termos.css';
