@@ -47,12 +47,30 @@
   left: 0;
 }
 
-.link:hover{
+.link:hover {
   color: var(--cor-0);
 }
 
 @media (max-width: 400px) {
   .link {
+    font-size: 1rem;
+  }
+}
+
+.titulo-paginas {
+  background-color: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.titulo p{
+  margin-bottom: 4px;
+}
+@media (max-width: 800px) {
+  .titulo-paginas{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo p{
     font-size: 1rem;
   }
 }
