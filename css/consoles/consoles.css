@@ -1,0 +1,123 @@
+.consoles {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: grid;
+  gap: 120px;
+}
+.consoles-item {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.consoles-item:nth-child(2) .consoles-imagem {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.consoles-item:nth-child(2) .consoles-conteudo {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.consoles-imagem {
+  position: relative;
+}
+
+.consoles-imagem span {
+  background-color: var(--cor-10);
+  padding: 4px 16px 4px 8px;
+  border-radius: 4px 0 0 4px;
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+.consoles-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.consoles-conteudo h2 {
+  margin-bottom: 16px;
+  grid-column: 1/-1;
+}
+
+.consoles-conteudo h2::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 12px;
+  background: var(--cor-p4);
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.consoles-item:hover .consoles-imagem {
+  transform: scale(1.025);
+  transition: 0.6s;
+}
+
+.consoles-conteudo p {
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+}
+
+.consoles-conteudo ul {
+  display: grid;
+}
+
+.consoles-conteudo li {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 8px;
+  align-items: center;
+}
+
+.consoles-conteudo li + li {
+  margin-top: 12px;
+}
+
+.consoles-conteudo a {
+  align-self: end;
+  justify-self: end;
+}
+
+@media (max-width: 800px) {
+  .consoles {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 60px;
+  }
+  .consoles-item {
+    padding: 0 40px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .consoles-item:nth-child(2) .consoles-imagem {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .consoles-item:nth-child(2) .consoles-conteudo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+@media (max-width: 600px) {
+  .consoles-item{
+    padding: 0px;
+  }
+  .consoles-conteudo{
+    grid-template-columns: 1fr;
+  }
+  .consoles-conteudo ul {
+    margin-bottom: 24px;
+  }
+  .consoles-conteudo a{
+    align-self: start;
+    justify-self: start;
+  }
+}
