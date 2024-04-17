@@ -38,7 +38,7 @@
 .consoles-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
-  align-content: start;
+  align-content: center;
 }
 
 .consoles-conteudo h2 {
