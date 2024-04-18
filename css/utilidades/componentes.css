@@ -15,6 +15,9 @@
   color: #1d1547;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   text-transform: uppercase;
+  width: max-content;
+  border: none;
+  cursor: pointer;
 }
 
 .botao:hover {
