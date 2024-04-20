@@ -27,5 +27,8 @@
 /* Orçamento */
 @import './orcamento/orcamento.css';
 
+/* Sobre nós */
+@import './sobrenos/sobrenos.css';
+
 /* Termos */
 @import './termos/termos.css';
