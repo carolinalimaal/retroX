@@ -36,36 +36,44 @@
 
         <form class="orcamento container" action="">
             <div class="orcamento-produto">
-                <h2 class="font-1-xs cor-6">Console ou Acessório?</h2>
+                <h2 class="font-1-xs cor-6">Escolha o seu console:</h2>
 
-                <input type="radio" name="tipo" value="console" id="console">
-                <label for="console">Console</label>
-
-                <input type="radio" name="tipo" value="acessorio" id="acessorio">
-                <label for="acessorio">Acessório</label>
-
-                <div class="orcamento-conteudo" id="orcamento-console">
-                    <h3 class="font-1-xs cor-5">Escolha o seu console:</h3>
-
-                    <input type="radio" name="produto" value="16bits" id="16bits">
-                    <label for="16bits">16bits US <span>R$ 499</span></label>
-
-                    <input type="radio" name="produto" value="midnight" id="midnight">
-                    <label for="midnight">Midnight Black <span>R$ 599</span></label>
-
-                    <input type="radio" name="produto" value="ice" id="ice">
-                    <label for="ice">Ice Blue <span>R$ 699</span></label>
+                <input type="radio" name="produto" value="16bits" id="16bits" required>
+                <label for="16bits">16bits US <span>R$ 499</span></label>
+                <div class="orcamento-detalhes">
+                    <ul class="font-1-xs cor-8">
+                        <li><img src="./img/icones/body.svg" alt="">Cinza e Lilás</li>
+                        <li><img src="./img/icones/storage.svg" alt="">64 GB</li>                        
+                        <li><img src="./img/icones/screen.svg" alt="">IPS 7.4″</li>
+                        <li><img src="./img/icones/battery.svg" alt="">5000 mAh</li>
+                    </ul>
+                    <img src="./img/consoles/16bits.jpg" alt="Console 16bits US">
                 </div>
 
-                <div class="orcamento-conteudo" id="orcamento-acessorio">
-                    <h3 class="font-1-xs cor-5">Escolha o seu acessorio:</h3>
-
-                    <input type="radio" name="produto" value="case" id="case">
-                    <label for="case">Case protetor <span>R$ 99</span></label>
-
-                    <input type="radio" name="produto" value="pelicula" id="pelicula">
-                    <label for="pelicula">Película <span>R$ 59</span></label>
+                <input type="radio" name="produto" value="midnight" id="midnight" required>
+                <label for="midnight">Midnight Black <span>R$ 599</span></label>
+                <div class="orcamento-detalhes">
+                    <ul class="font-1-xs cor-8">
+                        <li><img src="./img/icones/body.svg" alt="">Preto e Colorido</li>
+                        <li><img src="./img/icones/storage.svg" alt="">128 GB</li>                        
+                        <li><img src="./img/icones/screen.svg" alt="">IPS 7.4″</li>
+                        <li><img src="./img/icones/battery.svg" alt="">5000 mAh</li>
+                    </ul>
+                    <img src="./img/consoles/midnight-black.jpg" alt="Console Midnight Black">
                 </div>
+
+                <input type="radio" name="produto" value="ice" id="ice" required>
+                <label for="ice">Ice Blue <span>R$ 699</span></label>
+                <div class="orcamento-detalhes">
+                    <ul class="font-1-xs cor-8">
+                        <li><img src="./img/icones/body.svg" alt="">Azul e Colorido</li>
+                        <li><img src="./img/icones/storage.svg" alt="">256 GB</li>                        
+                        <li><img src="./img/icones/screen.svg" alt="">IPS 7.4″</li>
+                        <li><img src="./img/icones/battery.svg" alt="">5000 mAh</li>
+                    </ul>
+                    <img src="./img/consoles/ice-blue.jpg" alt="Console Ice Blue">
+                </div>
+
             </div>
 
 
@@ -73,46 +81,50 @@
                 <h2 class="font-1-xs cor-9 col-2">dados pessoais</h2>
                 <div>
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome" required>
                 </div>
                 <div>
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" id="sobrenome" name="sobrenome">
+                    <input type="text" id="sobrenome" name="sobrenome" required>
                 </div>
                 <div class="col-2">
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" name="cpf">
+                    <input type="text" id="cpf" name="cpf" required>
                 </div>
                 <div class="col-2">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <h2 class="font-1-xs cor-9 col-2">entrega</h2>
                 <div>
                     <label for="cep">CEP</label>
-                    <input type="text" id="cep" name="cep" placeholder="XXX.XXX.XXX-XX">
+                    <input type="text" id="cep" name="cep" placeholder="XXX.XXX.XXX-XX" required>
                 </div>
                 <div>
                     <label for="numero">Número</label>
-                    <input type="text" id="numero" name="numero">
+                    <input type="text" id="numero" name="numero" required>
                 </div>
                 <div>
                     <label for="logradouro">Logradouro</label>
-                    <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida...">
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Rua, Avenida..." required>
                 </div>
                 <div>
                     <label for="bairro">Bairro</label>
-                    <input type="text" id="bairro" name="bairro">
+                    <input type="text" id="bairro" name="bairro" required>
                 </div>
                 <div>
                     <label for="cidade">Cidade</label>
-                    <input type="text" id="cidade" name="cidade">
+                    <input type="text" id="cidade" name="cidade" required>
                 </div>
                 <div>
                     <label for="estado">Estado</label>
-                    <input type="text" id="estado" name="estado">
+                    <input type="text" id="estado" name="estado" required>
                 </div>
-                <button class="botao col-2">Solicitar orçamento</button>
+                <div class="col-2">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Li e aceito os <a href="./termos.html">termos e condições</a></label>
+                </div>
+                <button class="botao col-2">gerar orçamento</button>
             </div>
 
         </form>
