@@ -41,3 +41,9 @@ function eventosImagems(imagem) {
 }
 
 imagens.forEach(eventosImagems);
+
+
+// Plugin animação
+if (window.SimpleAnime){
+  new SimpleAnime()
+}
